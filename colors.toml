@@ -1,0 +1,55 @@
+mode = "dark"
+
+accent    = "#a4a7ff"
+selection = "#393a62"
+muted     = "#523f69"
+
+background         = "#29122a"
+dark_background    = "#1c071e"
+darker_background  = "#130114"
+lighter_background = "#391f3b"
+
+foreground        = "#dad4e4"
+dark_foreground   = "#978da4"
+light_foreground  = "#e4deee"
+bright_foreground = "#eee8f8"
+
+red     = "#de92d8"
+yellow  = "#f7917f"
+orange  = "#f28dad"
+green   = "#c4b347"
+cyan    = "#52cb9d"
+blue    = "#32c3ea"
+magenta = "#85b1ff"
+brown   = "#794757"
+
+bright_red     = "#f9abf3"
+bright_yellow  = "#ffb5a8"
+bright_green   = "#decd62"
+bright_cyan    = "#6fe5b6"
+bright_blue    = "#69dcff"
+bright_magenta = "#aeccff"
+
+# Legacy ANSI names — only Omarchy 3.x reads these. Omarchy 4 derives
+# them from the palette above and ignores this block.
+cursor               = "#eee8f8"
+selection_foreground = "#eee8f8"
+selection_background = "#393a62"
+
+color0 = "#29122a"
+color1 = "#de92d8"
+color2 = "#c4b347"
+color3 = "#f7917f"
+color4 = "#32c3ea"
+color5 = "#85b1ff"
+color6 = "#52cb9d"
+color7 = "#dad4e4"
+
+color8  = "#523f69"
+color9  = "#f9abf3"
+color10 = "#decd62"
+color11 = "#ffb5a8"
+color12 = "#69dcff"
+color13 = "#aeccff"
+color14 = "#6fe5b6"
+color15 = "#eee8f8"

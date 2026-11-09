@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="570" viewBox="0 0 1120 570" role="img" aria-labelledby="title desc">
+<title id="title">Paleta Cyber Make</title>
+<desc id="desc">Cores semânticas e as dezesseis cores ANSI definidas em colors.toml. Esta imagem não é uma captura de tela.</desc>
+<rect width="1120" height="570" rx="12" fill="#130114"/>
+<g font-family="monospace" fill="#dad4e4">
+<text x="32" y="48" font-size="26">Cyber Make / colors.toml</text>
+<rect x="32" y="78" width="240" height="64" rx="6" fill="#29122a"/>
+<text x="32" y="168" font-size="16">background</text>
+<text x="32" y="191" font-size="14">#29122A</text>
+<rect x="304" y="78" width="240" height="64" rx="6" fill="#dad4e4"/>
+<text x="304" y="168" font-size="16">foreground</text>
+<text x="304" y="191" font-size="14">#DAD4E4</text>
+<rect x="576" y="78" width="240" height="64" rx="6" fill="#a4a7ff"/>
+<text x="576" y="168" font-size="16">accent</text>
+<text x="576" y="191" font-size="14">#A4A7FF</text>
+<rect x="848" y="78" width="240" height="64" rx="6" fill="#393a62"/>
+<text x="848" y="168" font-size="16">selection</text>
+<text x="848" y="191" font-size="14">#393A62</text>
+<text x="32" y="239" font-size="18">ANSI 0–15</text>
+<rect x="32" y="260" width="112" height="64" rx="6" fill="#29122a"/>
+<text x="32" y="348" font-size="14">color0</text>
+<text x="32" y="370" font-size="14">#29122A</text>
+<rect x="168" y="260" width="112" height="64" rx="6" fill="#de92d8"/>
+<text x="168" y="348" font-size="14">color1</text>
+<text x="168" y="370" font-size="14">#DE92D8</text>
+<rect x="304" y="260" width="112" height="64" rx="6" fill="#c4b347"/>
+<text x="304" y="348" font-size="14">color2</text>
+<text x="304" y="370" font-size="14">#C4B347</text>
+<rect x="440" y="260" width="112" height="64" rx="6" fill="#f7917f"/>
+<text x="440" y="348" font-size="14">color3</text>
+<text x="440" y="370" font-size="14">#F7917F</text>
+<rect x="576" y="260" width="112" height="64" rx="6" fill="#32c3ea"/>
+<text x="576" y="348" font-size="14">color4</text>
+<text x="576" y="370" font-size="14">#32C3EA</text>
+<rect x="712" y="260" width="112" height="64" rx="6" fill="#85b1ff"/>
+<text x="712" y="348" font-size="14">color5</text>
+<text x="712" y="370" font-size="14">#85B1FF</text>
+<rect x="848" y="260" width="112" height="64" rx="6" fill="#52cb9d"/>
+<text x="848" y="348" font-size="14">color6</text>
+<text x="848" y="370" font-size="14">#52CB9D</text>
+<rect x="984" y="260" width="112" height="64" rx="6" fill="#dad4e4"/>
+<text x="984" y="348" font-size="14">color7</text>
+<text x="984" y="370" font-size="14">#DAD4E4</text>
+<rect x="32" y="405" width="112" height="64" rx="6" fill="#523f69"/>
+<text x="32" y="493" font-size="14">color8</text>
+<text x="32" y="515" font-size="14">#523F69</text>
+<rect x="168" y="405" width="112" height="64" rx="6" fill="#f9abf3"/>
+<text x="168" y="493" font-size="14">color9</text>
+<text x="168" y="515" font-size="14">#F9ABF3</text>
+<rect x="304" y="405" width="112" height="64" rx="6" fill="#decd62"/>
+<text x="304" y="493" font-size="14">color10</text>
+<text x="304" y="515" font-size="14">#DECD62</text>
+<rect x="440" y="405" width="112" height="64" rx="6" fill="#ffb5a8"/>
+<text x="440" y="493" font-size="14">color11</text>
+<text x="440" y="515" font-size="14">#FFB5A8</text>
+<rect x="576" y="405" width="112" height="64" rx="6" fill="#69dcff"/>
+<text x="576" y="493" font-size="14">color12</text>
+<text x="576" y="515" font-size="14">#69DCFF</text>
+<rect x="712" y="405" width="112" height="64" rx="6" fill="#aeccff"/>
+<text x="712" y="493" font-size="14">color13</text>
+<text x="712" y="515" font-size="14">#AECCFF</text>
+<rect x="848" y="405" width="112" height="64" rx="6" fill="#6fe5b6"/>
+<text x="848" y="493" font-size="14">color14</text>
+<text x="848" y="515" font-size="14">#6FE5B6</text>
+<rect x="984" y="405" width="112" height="64" rx="6" fill="#eee8f8"/>
+<text x="984" y="493" font-size="14">color15</text>
+<text x="984" y="515" font-size="14">#EEE8F8</text>
+</g>
+</svg>
