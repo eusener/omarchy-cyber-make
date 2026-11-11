@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Cyber Make Studio
+Comment=Customize the Cyber Make theme for Omarchy
+Comment[pt]=Personalize o tema Cyber Make para o Omarchy
+Comment[pt_BR]=Personalize o tema Cyber Make para o Omarchy
+Exec=cyber-make-studio open
+Icon=cyber-make-studio
+Terminal=false
+Categories=Settings;DesktopSettings;
+Keywords=Theme;Appearance;Hyprland;Omarchy;
+Keywords[pt_BR]=Tema;Aparência;Hyprland;Omarchy;
+StartupWMClass=cyber-make-studio

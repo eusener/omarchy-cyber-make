@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/">
+    <file>Main.qml</file>
+    <file>SettingRow.qml</file>
+    <file>ThemePreview.qml</file>
+    <file>i18n/pt.json</file>
+  </qresource>
+</RCC>

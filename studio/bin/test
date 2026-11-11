@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+studio="$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)"
+"$studio/bin/build"
+output="${CYBER_MAKE_STUDIO_BUILD_DIR:-$studio/build}"
+CYBER_MAKE_STUDIO_BIN="$output/cyber-make-studio" python "$studio/tests/integration.py"
+mkdir -p "$output/tests"
+cd "$output/tests"
+qmake6 "$studio/tests/gui.pro"
+make -j"${CYBER_MAKE_STUDIO_JOBS:-$(nproc)}"
+CYBER_MAKE_STUDIO_TEST_THEME="$(dirname -- "$studio")" ./cyber-make-studio-gui-test

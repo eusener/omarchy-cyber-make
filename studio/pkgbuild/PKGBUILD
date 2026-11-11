@@ -1,0 +1,26 @@
+pkgname=cyber-make-studio
+pkgver=1.0.0
+pkgrel=1
+pkgdesc='Desktop editor for the Cyber Make theme on Omarchy'
+arch=('x86_64' 'aarch64')
+url='https://github.com/eusener/omarchy-cyber-make'
+license=('custom')
+depends=('omarchy>=4.5' 'hyprland>=0.56' 'qt6-base' 'qt6-declarative' 'qt6-wayland' 'ttf-jetbrains-mono')
+makedepends=('tomlplusplus')
+source=("$pkgname-$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+    cd "$srcdir/$pkgname-$pkgver"
+    qmake6 "$pkgname.pro"
+    make
+}
+
+package() {
+    cd "$srcdir/$pkgname-$pkgver"
+    install -Dm755 "$pkgname" "$pkgdir/usr/bin/$pkgname"
+    install -Dm644 "$pkgname.desktop" "$pkgdir/usr/share/applications/$pkgname.desktop"
+    install -Dm644 "$pkgname.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/$pkgname.svg"
+    install -d "$pkgdir/usr/share/$pkgname/theme"
+    cp -r theme/. "$pkgdir/usr/share/$pkgname/theme/"
+}
