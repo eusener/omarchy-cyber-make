@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+
+studio="$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)"
+output="${CYBER_MAKE_STUDIO_BUILD_DIR:-$studio/build}"
+mkdir -p "$output"
+cd "$output"
+qmake6 "$studio/cyber-make-studio.pro"
+make -j"${CYBER_MAKE_STUDIO_JOBS:-$(nproc)}"

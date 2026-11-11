@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+
+studio="$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)"
+theme="$(dirname -- "$studio")"
+output="${CYBER_MAKE_STUDIO_BUILD_DIR:-$studio/build}"
+output="$(realpath -m -- "$output")"
+mkdir -p "$output"
+stage="$(mktemp -d)"
+trap 'rm -rf -- "$stage"' EXIT
+release="cyber-make-studio-$(sed -n 's/^pkgver=//p' "$studio/pkgbuild/PKGBUILD")"
+mkdir -p "$stage/$release/theme"
+cp -r "$studio/src" "$studio/cyber-make-studio.pro" "$studio/pkgbuild/"*.desktop "$studio/pkgbuild/"*.svg "$stage/$release/"
+cp -r "$theme/colors.toml" "$theme/icons.theme" "$theme/preview.png" "$theme"/shell.*.toml "$theme/backgrounds" "$stage/$release/theme/"
+tar -C "$stage" -czf "$stage/$release.tar.gz" "$release"
+cp "$studio/pkgbuild/PKGBUILD" "$stage/"
+cd "$stage"
+PKGDEST="$output" SRCDEST="$stage" BUILDDIR="$stage" MAKEFLAGS="-j${CYBER_MAKE_STUDIO_JOBS:-$(nproc)}" makepkg --force "$@"
